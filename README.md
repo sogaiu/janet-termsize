@@ -1,14 +1,14 @@
 # janet-termsize
 
-A Janet implementation of determining a terminal's size (rows,
-columns).  No compilation necessary.
+A Janet implementation of determining a terminal's size (rows and
+columns).  No C compilation necessary.
 
 ## Usage
 
 ```janet
-(import ./janet-termsize :as ts)
+(import termsize :as ts)
 
-(ts/termsize)
+(ts/rows-and-cols)
 # =>
 [24 80]
 ```
@@ -40,10 +40,10 @@ Possibly of interest:
 * Falls back to external process methods (`stty` for Unixy systems and
   powershell for Windows)
 
-* The function `termsize` hands things off to various helper functions
-  such as `via-ioctl`, `via-winapi`, or `via-shell`.  These are
-  exposed but no particular effort may be made to keep them the same
-  (or around) over time [1].
+* The function `rows-and-cols` hands things off to various helper
+  functions such as `via-ioctl`, `via-winapi`, or `via-shell`.  These
+  are exposed but no particular effort may be made to keep them the
+  same (or around) over time [1].
 
 * When implementing FFI-related bits for Windows, it was helpful to
   examine [this

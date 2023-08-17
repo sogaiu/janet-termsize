@@ -76,7 +76,7 @@
     [right left]
     [left right]))
 
-(defn termsize
+(defn rows-and-cols
   []
   (def os (os/which))
   (def arch (os/arch))

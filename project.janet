@@ -4,5 +4,5 @@
   :repo "git+https://github.com/sogaiu/janet-termsize.git")
 
 (declare-source
-  :source @["janet-termsize"])
+  :source @["termsize"])
 
