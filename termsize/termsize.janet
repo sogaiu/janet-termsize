@@ -112,3 +112,11 @@
     #
     (errorf "Unsupported os: %s" os)))
 
+(defn rows
+  []
+  (get (rows-and-cols) 0))
+
+(defn cols
+  []
+  (get (rows-and-cols) 1))
+

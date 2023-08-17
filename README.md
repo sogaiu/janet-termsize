@@ -11,6 +11,14 @@ columns).  No C compilation necessary.
 (ts/rows-and-cols)
 # =>
 [24 80]
+
+(ts/rows)
+# =>
+24
+
+(ts/cols)
+# =>
+80
 ```
 
 ## Notes
