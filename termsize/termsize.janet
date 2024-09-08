@@ -102,8 +102,7 @@
     #
     (get {:bsd true
           :cygwin true
-          # XXX: file/temp doesn't work for :mingw atm?
-          #:mingw true
+          :mingw true
           :posix true} os)
     (via-shell os)
     #
